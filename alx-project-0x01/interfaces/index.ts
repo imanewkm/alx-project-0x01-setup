@@ -3,6 +3,7 @@ export interface PostProps {
     id: number;
     title: string;
     body: string;
+    posts?: PostProps[];
 }
 
 export interface UserProps {
@@ -27,5 +28,36 @@ export interface UserProps {
         catchPhrase: string;
         bs: string;
     }
+    avatar: string;
+    bio: string;
+    role?: string;
+    joinDate?: string;
 }
 
+export interface User {
+    id: number;
+    name: string;
+    username: string;
+    email: string;
+    address: {
+        street: string;
+        suite: string;
+        city: string;
+        zipcode: string;
+        geo: {
+            lat: string;
+            lng: string;
+        }
+    },
+    phone: string;
+    website: string;
+    company: {
+        name: string;
+        catchPhrase: string;
+        bs: string;
+    }
+    avatar: string;
+    bio: string;
+    role?: string;
+    joinDate?: string;
+}

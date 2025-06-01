@@ -1,11 +1,6 @@
 import Header from "@/components/layout/Header";
 import UserCard from "@/components/common/UserCard";
-
-interface User {
-    id: number;
-    name: string;
-    email: string;
-}
+import { User } from "@/interfaces";
 
 interface UsersProps {
     posts: User[];

@@ -1,5 +1,5 @@
 import React from 'react';
-import { UserProps } from "@/interfaces";
+import { UserProps } from '@/interfaces';
 
 interface UserCardProps {
     user: UserProps;
