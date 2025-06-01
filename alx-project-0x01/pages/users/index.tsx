@@ -1,4 +1,5 @@
 import Header from "@/components/layout/Header";
+import UserCard from "@/components/common/UserCard";
 
 interface User {
     id: number;
@@ -14,7 +15,11 @@ function Users({ posts }: UsersProps) {
     return (
         <div>
             <Header />
-            {/* Your users content here */}
+            <div className="users-container">
+                {posts.map((user) => (
+                    <UserCard key={user.id} user={user} />
+                ))}
+            </div>
         </div>
     );
 }

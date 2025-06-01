@@ -1,18 +1,8 @@
 import React from 'react';
-import Users from "@/pages/users/index";
-
-interface Users {
-    id: number;
-    name: string;
-    email: string;
-    avatar?: string;
-    role?: string;
-    bio?: string;
-    joinDate?: string;
-}
+import { UserProps } from "@/interfaces";
 
 interface UserCardProps {
-    user: Users;
+    user: UserProps;
     onUserClick?: (userId: number) => void;
     showBio?: boolean;
     compact?: boolean;
