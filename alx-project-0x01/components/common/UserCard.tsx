@@ -1,5 +1,14 @@
 import React from 'react';
-import { UserProps } from '@/interfaces';
+
+interface UserProps {
+    id: number;
+    name: string;
+    email: string;
+    avatar?: string;
+    role?: string;
+    bio?: string;
+    joinDate?: string;
+}
 
 interface UserCardProps {
     user: UserProps;
