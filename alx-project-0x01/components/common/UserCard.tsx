@@ -7,35 +7,7 @@ interface UserCardProps {
     showBio?: boolean;
     compact?: boolean;
 }
-const AnotherUserProps: React.FC<UserProps> = ({
-    id,
-    name,
-    username,
-    email,
-    address,
-    phone,
-    website,
-    company,
-    avatar,
-    bio,
-    role,
-    joinDate
-}) => {
-    return {
-        id,
-        name,
-        username,
-        email,
-        address,
-        phone,
-        website,
-        company,
-        avatar,
-        bio,
-        role,
-        joinDate
-    };
-}
+// Removed unused AnotherUserProps declaration
 const UserCard: React.FC<UserCardProps> = ({ 
     user, 
     onUserClick, 

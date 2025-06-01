@@ -61,3 +61,15 @@ export interface User {
     role?: string;
     joinDate?: string;
 }
+
+export interface PostData {
+    userID: number;
+    id?: number;
+    title: string;
+    body: string;
+}
+
+export interface PostModalProps {
+    onClose: () => void;
+    onSubmit: (post: PostData) => void;
+}
